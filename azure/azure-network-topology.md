@@ -25,7 +25,7 @@ Pros:
 
 - The custom Virtual Network provides flexibility to manage subnets within the Hub and add multiple IP address prefixes to the virtual network.
 - It is possible to integrate various resources into the Virtual Network (such as Virtual Machines, Azure Bastion, Private DNS Resolver, and Azure Application Gateway).
-- The Virtual Network does not have a built-in router, meaning there are no bandwidth limitations unless we implement a third-party Network Virtual Appliance. (For the Azure Firewall Premium SKU, we can increase bandwidth up to 200 Gbps).
+- The Virtual Network does not have a built-in router, meaning there are no bandwidth limitations unless we implement a third-party Network Virtual Appliance. (For the Azure Firewall Premium SKU, we can increase bandwidth up to 100 Gbps)
 
 Cons:
 
@@ -44,7 +44,7 @@ Pros:
 Simplified routing capabilities.
 - Azure Virtual WAN's built-in gateways offer higher bandwidth than traditional Virtual Network Gateways. It also allows using Azure Virtual WAN for more than 100 S2S tunnels.
 - Azure provides the ability to easily integrate third-party NVAs into the virtual hub, which is particularly useful if you already have existing SD-WAN solutions for interconnecting different locations.
-- The Route Maps feature (currently in public preview) is available only in Virtual WAN. This feature allows summarizing, controlling, and managing routes from on-premises and Virtual Networks. It also enables modifying BGP attributes such as AS-PATH to make a route more or less preferable.
+- The Route Maps feature is available only in Virtual WAN. This feature allows summarizing, controlling, and managing routes from on-premises and Virtual Networks. It also enables modifying BGP attributes such as AS-PATH to make a route more or less preferable.
 
 Cons:
 
