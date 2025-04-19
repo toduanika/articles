@@ -4,7 +4,7 @@
 
 Network topology defines how various devices or locations are interconnected. There are several types of topologies, including Point-to-Point, Bus, Ring, Star, Tree, and Mesh.
 
-Since today’s topic is Azure, and the Azure Cloud Adoption Framework (CAF) primarily focuses on the Hub-and-Spoke model when discussing topologies, our main focus will be on the Star topology, commonly known as Hub-and-Spoke in Azure.
+Since our topic is Azure, and the Azure Cloud Adoption Framework (CAF) primarily focuses on the Hub-and-Spoke model when discussing topologies, our main focus will be on the Star topology, commonly known as Hub-and-Spoke in Azure.
 
 ## Why is it crucial to choose the right topology?
 
@@ -19,7 +19,7 @@ Selecting the right network topology is essential because it impacts performance
 
 In a traditional Network Topology in Azure, one Virtual Network serves as the Hub, while all other Virtual Networks, used as landing zones, are connected to it as Spokes.
 
-![hubVirtualNetwork](media/hubspoke-hubVirtualNetwork.drawio.png)
+![Hub Virtual Network](media/hub-spoke-virtual-network.png)
 
 Pros:
 
@@ -36,7 +36,7 @@ Cons:
 
 Azure Offers manage hub and spoke solution in the resource Virtual WAN, where the central connectivity point is Virtual Hub and spoke Virtual Networks are connected to it.
 
-![virtualWan](media/hubspoke-virtualWan.drawio.png)
+![Virtual WAN](media/hub-spoke-virtual-wan.png)
 
 Pros:
 
